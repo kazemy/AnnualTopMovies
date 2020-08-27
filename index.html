@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		/>
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Top Movies</title>
+	</head>
+	<body>
+		<section class="hero hero-body is-dark container">
+			<h1 class="title">Annual Top Movies
+				<span class="icon">
+					<i class="fas fa-film"></i>
+				</span>
+			</h1>
+			<h2 class="subtitle">Enter a year to get top 10 movies for this year</h2>
+			
+			<form id="movieForm">
+				<div class="field">
+					<div class="control has-icons-left has-icons-right">
+						<input class="input movies is-large" type="text" placeholder="Enter year">
+							<span class="icon is-small is-left">
+								<i class="fas fas fa-search"></i>
+							</span>
+							<span class="icon is-small is-right icon-check">
+								<i class="fas fa-check"></i>
+							</span>
+							<span class="icon is-small is-right icon-remove">
+								<i class="fas fa-remove"></i>
+							</span>
+					</div>
+				</div>
+			</form>
+		</section>
+			<br>
+			<div class="container">
+				<div id="output"></div>
+			</div>
+			
+			<script src="index.js" type="text/javascript"></script>
+	</body>
+</html>
